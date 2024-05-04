@@ -1,0 +1,397 @@
+
+  body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #a02020;
+      color: #fff;
+    }
+    
+    
+    header {
+      background-color: #373737;
+      padding: 16px;
+      text-align: center;
+      border-bottom: solid 3px #100b0b;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      }
+
+
+    h1 {
+     font-family: fantasy;
+     margin: -10px;
+     padding-top: .3em;
+     color: #fff;
+     font-size: 350%;
+     font-stretch: expanded;
+     text-decoration: underline overline dotted black;
+     text-shadow:
+      0 0 4px #ff0000,
+      0 0 8px #ff0000,
+      0 0 12px #ffaa00,
+      0 0 16px #ffff00;
+    }
+
+    @keyframes jump {
+      from { color: #465; }
+      to { color: rgb(30, 0, 255); }
+    }
+    
+    h1 {
+      animation: jump 1.2s ease-in-out infinite alternate;
+    }
+
+    #nav_menu {
+      background-color: #333;
+      border-bottom: 3px rgb(0, 0, 0) dashed;
+      text-align: right;    }
+    
+    #nav_menu ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      position: relative;
+      margin-right: 50px;
+    }
+    
+    #nav_menu ul li {
+      display: inline-block;
+    }
+    
+    #nav_menu ul li a {
+      display: block;
+      padding: 10px 20px;
+      text-decoration: none;
+      color: #fff;
+      text-align: center;
+      background-color: #333;
+      transition: transform .5s ease-out;
+    }
+    #nav_menu ul li a:hover {
+      transform: scale(1.3)
+    }
+
+    #nav_menu ul li ul li {
+      width: 100%;
+      margin-right: 25px;
+      text-align: center;
+      padding: 0;
+      text-indent: -10px;
+    }
+
+    #nav_menu ul li a2 {
+      display: block;
+      padding: 10px 20px;
+      text-decoration: none;
+      color: #fff;
+      background-color: #333;
+      transition: transform .5s ease-out;
+      pointer-events: none;
+    }
+
+    #nav_menu ul li a2:hover {
+      transform: scale(1.3)
+    }
+
+    #nav_menu ul ul {
+      display: none;
+      position: absolute;
+      background-color: #333;
+      z-index: 1000;
+    }
+    
+    #nav_menu ul li:hover > ul {
+      display: block;
+      background-color: linear-gradient(to right, red, green);
+    }
+    
+    main {
+      padding: 16px;
+    }
+    
+    .camping-info {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 16px;
+    }
+    
+    .camping-info img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 20px;
+      box-shadow: 5px 5px 10px black;
+    }
+    .camping-details {
+      flex: 1;
+      text-align: center;
+    }
+
+    .camping-details3 {
+      flex: 1;
+      margin-left: 10px;
+      text-align: center;
+    }
+    
+    h2 {
+      font-size: 150%;
+      text-indent: 0px;
+      text-align: center;
+      text-decoration: underline;
+      text-decoration-style: wavy;
+    }
+    
+    h3 {
+      text-decoration: underline 1.5px;
+      font-weight: 800;
+      font-size: x-large;
+      width: 57%;
+      margin: auto;
+
+      }
+    h4 {
+      text-decoration: underline 1.5px;
+      text-align: center;
+      font-size: larger;
+      width: 50%;
+      margin: auto;
+      padding-top: .25em;
+    }
+
+    h5 {
+      font-size: 150%;
+      text-indent: 0px;
+      text-align: center;
+      text-decoration: underline;
+    }
+
+    p1 {
+      font-size: 20px;
+      display: inline-block;
+      text-align: center;
+    }
+
+    p3 {
+      text-align: center;
+      font-size: larger;
+    }
+
+    main {
+      gap: 20px;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+    
+    main2 {
+      display: grid;
+      grid-template-columns: auto auto auto;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+    }
+    
+    .history {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    
+    .history img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 5px 5px 10px black;
+      margin-top: 2em;
+    }
+    
+    .history h5 {
+      text-align: center;
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+    
+    .history p {
+      text-align: center;
+      font-size: 16px;
+    }
+
+    .contact {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    
+    .contact img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 5px 5px 10px black;
+    }
+    
+    .contact h5 {
+      text-align: center;
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+    
+    .contact p {
+      text-align: center;
+      text-justify: auto;
+      font-size: 16px;
+      padding-bottom: 15px;
+    }
+
+    .contact titl {
+      margin: 2em;
+      background-color: rgba(0, 0, 0, 0.2);
+      border: 6px solid rgba(0, 0, 0, 0.2);
+      border-radius: 10px;
+      box-shadow: 4px 4px 35px black;
+    }
+
+   
+     input[type=text], select, textarea {
+      width: 100%; 
+      padding: 12px;
+      border: 2px solid #000000;
+      border-radius: 4px;
+      box-sizing: border-box; 
+      margin-top: 6px;
+      margin-bottom: 16px; 
+      resize: vertical 
+    }
+
+     input[type=submit] {
+      background-color: #aa0404;
+      color: white;
+      padding: 12px 20px;
+      border: 1.9px solid black;
+      border-color: #100b0b;
+      border-radius: 4px;
+      cursor: crosshair;
+      box-shadow: 5px 4.5px 14px black;
+    }
+
+     input[type=submit]:hover {
+      background-color: #4a0c0c;
+    }  
+
+    .container {
+      width: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border: 1px solid #000000;
+      border-radius: 10px;
+      background-color: #a02020;
+      padding: 20px;
+      box-shadow: 5px 10px 15px black;
+      margin-bottom: 2em;
+    }
+    
+    .alert {
+      background-color: #333  ;
+      border-radius: 20px;
+      padding: 5px 0px 10px 1px;
+      flex: 1;
+      margin-left: 13px;
+      box-shadow: 3px 3px 5px black;
+    }
+
+    .alert3 {
+      background-color: #333;
+      border-radius: 20px;
+      padding: 5px 0px 10px 1px;
+      flex: 1;
+      margin-left: -10px;
+      width: 100%;
+      box-shadow: 3px 3px 5px black;
+    }
+
+    p {
+      line-height: 1.5;
+    }
+    
+    .camping-features {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      margin-top: 24px;
+    }
+    
+    .feature {
+      flex: 1;
+      padding: 1.3em;
+      text-align: center;
+      background-color: #333;
+      border-radius: 20px;
+      box-shadow: 3px 3px 5px black;
+      transition: background .4s ease-in-out; 
+    }
+    .feature:hover {
+      box-shadow: 9px 9px 5px 0 black;
+      background: radial-gradient(circle at 50%, #00000066 0%, #a02020 15%,  #00000066 25%, #00179599 50%, #a02020 75%, #00179599 100%);
+
+    }
+
+    
+
+    footer {
+      background-color: #333;
+      padding: 10px; 
+      display: flex; 
+      justify-content: space-between;
+      align-items: center;
+      border-top: solid 3px #100b0b;
+      text-align: right;
+    }
+
+    p0 {
+      background-color: #333;
+      padding: 6px 0 1px 30px;
+      text-align: center;
+      bottom: 0;
+      height: 13%;
+    }
+    
+    .fam-pic img {
+      float: left;
+      width: 60px;
+      height: 48px;
+      border-radius: 5px;
+      box-shadow: 5px 5px 10px black;
+      margin-top: none;
+      image-resolution: from-image;
+      margin-left: 73px;
+      transition: transform .4s ease-in-out;
+    }
+    .fam-pic img:hover {
+      transform: translate(30%, 30%) scale(5);
+    }
+
+    .boys-pic img {
+      justify-content: center;
+      width: 48px;
+      height: 64px;
+      border-radius: 5px;
+      box-shadow: 5px 5px 10px black;
+      margin-left: 70px;
+      margin-top: none;
+      image-resolution: from-image;
+      margin-right: 0px;
+      transition: transform .4s ease-in-out;
+    }
+      .boys-pic img:hover {
+        transform: translate(30%, -40%), scale(3);
+        position: relative;
+        z-index: 999;
+      }
+
+    
+
+    
